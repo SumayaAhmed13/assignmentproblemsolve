@@ -1,0 +1,22 @@
+{
+  "name": "assignmentproblemsolve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start-dev": "nodemon script"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumayaAhmed13/assignmentproblemsolve.git"
+  },
+  "author": "Sumaya Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SumayaAhmed13/assignmentproblemsolve/issues"
+  },
+  "homepage": "https://github.com/SumayaAhmed13/assignmentproblemsolve#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
