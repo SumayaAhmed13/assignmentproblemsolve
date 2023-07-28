@@ -7,35 +7,34 @@ function discountAmount(purchaseamount){
 
     if(amount < 50){
         discount=0;
-        totalamount   = amount - (amount* discount / 100);
-        discountamount = amount -  totalamount;
+        totalamount = amount - (amount* discount / 100);
+        discountamount = amount - totalamount;
 
-        console.log(`Discounted Amount $${discountamount},Total Amount $${totalamount} ,Discount Amount $${discount}`);
+        console.log(`Discounted Amount $${totalamount},Total Amount $${amount} ,Discount Amount $${discountamount}`);
 
     }
     else if(amount >= 50 && amount<100){
 
         discount=5;
-        totalamount   = amount - (amount* discount / 100);
-        discountamount = amount -  totalamount;
+        totalamount = amount - (amount* discount / 100);
+        discountamount = amount - totalamount;
 
-        console.log(`Discounted Amount $${discountamount},Total Amount $${totalamount} ,Discount Amount $${discount}`);
+        console.log(`Discounted Amount $${totalamount},Total Amount $${amount} ,Discount Amount $${discountamount}`);
     }
     else if(amount >= 100 && amount <200){
 
         discount=10;
-        totalamount   = amount - (amount* discount / 100);
-        discountamount = amount -  totalamount;
+        totalamount = amount - (amount* discount / 100);
+        discountamount = amount - totalamount;
 
-        console.log(`Discounted Amount $${discountamount},Total Amount $${totalamount} ,Discount Amount $${discount}`);
+        console.log(`Discounted Amount $${totalamount},Total Amount $${amount} ,Discount Amount $${discountamount}`);
     }
     else if(amount >= 200 ){
 
         discount=15;
-        totalamount   = amount - (amount* discount / 100);
-        discountamount = amount -  totalamount;
-
-        console.log(`Discounted Amount $${discountamount},Total Amount $${totalamount} ,Discount Amount $${discount}`);
+        totalamount = amount - (amount* discount / 100);
+        discountamount = amount - totalamount;
+        console.log(`Discounted Amount $${totalamount},Total Amount $${amount} ,Discount Amount $${discountamount}`);
     }
 
 }
