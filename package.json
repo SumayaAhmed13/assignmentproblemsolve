@@ -2,9 +2,9 @@
   "name": "assignmentproblemsolve",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
-    "start-dev": "nodemon main"
+    "start-dev": "nodemon server"
   },
   "repository": {
     "type": "git",
