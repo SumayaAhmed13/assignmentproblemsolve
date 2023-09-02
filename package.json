@@ -2,9 +2,9 @@
   "name": "assignmentproblemsolve",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon server"
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/SumayaAhmed13/assignmentproblemsolve#readme",
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
