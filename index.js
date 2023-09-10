@@ -2,7 +2,11 @@
 //External Module
 const app=require('./app');
 
+const dotenv=require('dotenv');
 
-app.listen(3000,()=>{
-    console.log("3000 port running");
+dotenv.config({path:'./config.env'});
+
+
+app.listen(process.env.RUNNING_PORT,()=>{
+    console.log(`Listen Port : ${process.env.RUNNING_PORT}`);
 })
