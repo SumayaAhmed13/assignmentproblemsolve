@@ -2,8 +2,3 @@ node_modules
 
 config.env
 
-src\Controllers\blogDetailsController.js
-src\Controllers\profitController.js
-src\Controllers\projectController.js
-src\Controllers\serviceController.js
-src\Controllers\titleController.js

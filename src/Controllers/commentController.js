@@ -1,23 +1,17 @@
 const createComment= async(req,res)=>{
-
-    res.send('Comment Created Successfully');
-
+   res.status(200).json({status:"success", data: "Comment Created Successfully"});
 }
 const readComment=async(req,res)=>{
     
-    res.send('Get All Comment');
-
+    res.status(200).json({status:"success", data: "Get All Comment"});
 }
 const updateComment=async(req,res)=>{
-    
-    res.send('Comment Updated Successfully');
-
+     res.status(200).json({status:"success", data: "Comment Updated Successfully"});
 }
 
 const deleteComment=async(req,res)=>{
-    
-    res.send('Comment Deleted Successfully');
-
+  
+    res.status(200).json({status:"success", data: "Comment Deleted Successfully"});
 }
 module.exports={
     createComment,

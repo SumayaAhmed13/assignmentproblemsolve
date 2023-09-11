@@ -1,23 +1,15 @@
 const createBlog= async(req,res)=>{
-
-    res.send('Blog Created Successfully');
-
+  res.status(200).json({status:"success", data: "Blog Created Successfully"});
 }
 const readBlog=async(req,res)=>{
-    
-    res.send('Get All Blog');
-
+     res.status(200).json({status:"success", data: "Get All Blog"});
 }
 const updateBlog=async(req,res)=>{
-    
-    res.send('Blog Updated Successfully');
-
+    res.status(200).json({status:"success", data: "Blog Updated Successfully"});
 }
 
 const deleteBlog=async(req,res)=>{
-    
-    res.send('Blog Deleted Successfully');
-
+      res.status(200).json({status:"success", data: "Blog Deleted Successfully"});
 }
 module.exports={
     createBlog,

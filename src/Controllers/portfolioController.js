@@ -1,23 +1,15 @@
 const createPortfolio= async(req,res)=>{
-
-    res.send('Portfolio Created Successfully');
-
+    res.status(200).json({status:"success", data: "Portfolio Created Successfully"});
 }
 const readPortfolio=async(req,res)=>{
-    
-    res.send('Get All Portfolio');
-
+  res.status(200).json({status:"success", data: "Get All Portfolio"});
 }
 const updatePortfolio=async(req,res)=>{
-    
-    res.send('Portfolio Updated Successfully');
-
+   res.status(200).json({status:"success", data: "Portfolio Updated Successfully"});
 }
 
 const deletePortfolio=async(req,res)=>{
-    
-    res.send('Portfolio Deleted Successfully');
-
+  res.status(200).json({status:"success", data: "Portfolio Deleted Successfully"});
 }
 module.exports={
    createPortfolio,
