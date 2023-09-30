@@ -1,44 +1,34 @@
 const express=require('express');
 const router=express.Router();
-const blogCtrl=require('../Controllers/blogController');
-const commentCtrl=require('../Controllers/commentController');
-const messageCtrl=require('../Controllers/messageController');
-const portfolioCtrl=require('../Controllers/portfolioController');
-const productCtrl=require('../Controllers/productController');
+const userCtrl=require('../Controllers/userController');
+const adminCtrl=require('../Controllers/adminController');
+const subAdminCtrl=require('../Controllers/subAdminController');
+const postCtrl=require('../Controllers/postController');
+
+//User Router
+router.get('/user/read',userCtrl.readUser);
+router.get('/user/create',userCtrl.createUser);
+router.get('/user/update',userCtrl.updateUser);
+router.get('/user/delete',userCtrl.deleteUser);
 
 
-//Blog Router
+//Admin Router
+router.get('/admin/read',adminCtrl.readAdmin);
+router.get('/admin/create',adminCtrl.createAdmin);
+router.get('/admin/update',adminCtrl.updateAdmin);
+router.get('/admin/delete',adminCtrl.deleteAdmin);
 
-router.get('/blog/read',blogCtrl.readBlog);
-router.get('/blog/create',blogCtrl.createBlog);
-router.get('/blog/update',blogCtrl.updateBlog);
-router.get('/blog/delete',blogCtrl.deleteBlog);
-
-
-//Comment Router
-router.get('/comment/read',commentCtrl.readComment);
-router.get('/comment/create',commentCtrl.createComment);
-router.get('/comment/update',commentCtrl.updateComment);
-router.get('/comment/delete',commentCtrl.deleteComment);
-
-//Message Router
-router.get('/message/read',messageCtrl.readMessage);
-router.get('/message/create',messageCtrl.createMessage);
-router.get('/message/update',messageCtrl.updateMessage);
-router.get('/message/delete',messageCtrl.deleteMessage);
+//SubAdmin Router
+router.get('/subAdmin/read',subAdminCtrl.readSubAdmin);
+router.get('/subAdmin/create',subAdminCtrl.createSubAdmin);
+router.get('/subAdmin/update',subAdminCtrl.updateSubAdmin);
+router.get('/subAdmin/delete',subAdminCtrl.deleteSubAdmin);
 
 
-//Portfolio Router
-router.get('/portfolio/read',portfolioCtrl.readPortfolio);
-router.get('/portfolio/create',portfolioCtrl.createPortfolio);
-router.get('/portfolio/update',portfolioCtrl.updatePortfolio);
-router.get('/portfolio/delete',portfolioCtrl.deletePortfolio);
-
-
-//Product Router
-router.get('/product/read',productCtrl.readProduct);
-router.get('/product/create',productCtrl.createProduct);
-router.get('/product/update',productCtrl.updateProduct);
-router.get('/product/delete',productCtrl.deleteProduct);
+//Post Router
+router.get('/post/read',postCtrl.readPost);
+router.get('/post/create',postCtrl.createPost);
+router.get('/post/update',postCtrl.updatePost);
+router.get('/post/delete',postCtrl.deletePost);
 
 module.exports=router;
