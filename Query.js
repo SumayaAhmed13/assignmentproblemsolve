@@ -16,3 +16,7 @@ db.assignment.insertOne({
     likes: 1,
     date: Date()
   })
+
+ //Delete/remove a single document from the collection.
+ use('course');
+ db.assignment.deleteOne({ title: "MongoDb Tutorial" })
