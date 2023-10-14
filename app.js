@@ -20,6 +20,7 @@ app.use(cors());
 app.use(helmet());
 app.use(mongoSanitize());
 app.use(hpp());
+app.use(express.json());
 
 //Request Limit
 
@@ -34,7 +35,7 @@ app.use(limiter);
 
 //Application Routes
 
-app.use('/api',router);
+app.use('/api/v1',router);
 
 //undefined route
 app.use('*',(req,res)=>{
