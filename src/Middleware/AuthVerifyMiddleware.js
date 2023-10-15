@@ -5,10 +5,11 @@ const TokenVerify=(req,res,next)=>{
     jwt.verify(Token,"dffed334ersddc190422",(err,decoded)=>{
         if(err){
             console.log(Token)
-            res.status(401).json({status:"unauthorized"})
+            res.status(401).json({status:"unauthorized"});
+            next();
         }
         else{
-            let email=decoded[data];
+            let email=decoded['data'];
             req.headers.email=email
             next();
         }
@@ -16,4 +17,4 @@ const TokenVerify=(req,res,next)=>{
 
 }
 
-module.exports=TokenVerify
+module.exports={TokenVerify}
